@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessamine Landscaping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2c7744;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #333;
+            color: #ffffff;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #2c7744;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        form {
+            display: grid;
+            gap: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+        }
+        .page {
+            display: none;
+        }
+        .page:target {
+            display: block;
+        }
+        #home {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jessamine Landscaping</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="page">
+        <div class="container">
+            <h2>Welcome to Jessamine Landscaping</h2>
+            <p>We provide professional landscaping services to enhance the beauty of your outdoor spaces.</p>
+            <a href="#contact" class="cta-button">Get a Quote</a>
+        </div>
+    </div>
+
+    <div id="services" class="page">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Lawn Mowing and Maintenance</li>
+                <li>Landscape Design</li>
+                <li>Planting and Gardening</li>
+                <li>Tree and Shrub Pruning</li>
+                <li>Irrigation Systems</li>
+                <li>Hardscaping (Patios, Walkways)</li>
+            </ul>
+            <a href="#contact" class="cta-button">Request a Service</a>
+        </div>
+    </div>
+
+    <div id="about" class="page">
+        <div class="container">
+            <h2>About Jessamine Landscaping</h2>
+            <p>Jessamine Landscaping has been serving our community since [year]. We are dedicated to creating and maintaining beautiful outdoor spaces for our clients.</p>
+            <p>Our team of experienced professionals is committed to providing high-quality landscaping services and exceptional customer satisfaction.</p>
+            <h3>Our Mission</h3>
+            <p>To enhance the beauty and value of properties through innovative and sustainable landscaping solutions.</p>
+        </div>
+    </div>
+
+    <div id="gallery" class="page">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="gallery">
+                <!-- Replace these with your actual project images -->
+                <img src="https://via.placeholder.com/300x200.png?text=Project+1" alt="Landscaping Project 1">
+                <img src="https://via.placeholder.com/300x200.png?text=Project+2" alt="Landscaping Project 2">
+                <img src="https://via.placeholder.com/300x200.png?text=Project+3" alt="Landscaping Project 3">
+                <img src="https://via.placeholder.com/300x200.png?text=Project+4" alt="Landscaping Project 4">
+                <img src="https://via.placeholder.com/300x200.png?text=Project+5" alt="Landscaping Project 5">
+                <img src="https://via.placeholder.com/300x200.png?text=Project+6" alt="Landscaping Project 6">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="page">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for all your landscaping needs.</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number">
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <h3>Our Location</h3>
+            <p>123 Landscaping Lane, Greenville, State 12345</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@jessaminelandscaping.com</p>
+        </div>
+    </div>
+
+</body>
+</html>
